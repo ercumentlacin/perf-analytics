@@ -1,0 +1,33 @@
+{
+  "name": "my-library",
+  "version": "1.0.0",
+  "source": "src/index.js",
+  "license": "MIT",
+  "isLibrary": true,
+  "optimize": true,
+  "module": "dist/index.js",
+  "scripts": {
+    "watch": "parcel watch",
+    "prebuild": "rm -rf dist && rm -rf .parcel-cache",
+    "build": "pnpm prebuild && NODE_ENV=production && parcel build src/index.js --no-source-maps --dist-dir dist --no-cache",
+    "start": "http-server ./examples/ -c-1 -p 5500"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.0",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "parcel": "^2.0.1",
+    "prettier": "2.5.1"
+  },
+  "dependencies": {
+    "@parcel/config-default": "^2.1.0",
+    "http-server": "^14.0.0",
+    "perf-analytics": "file:./dist/"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "engines": {
+    "node": ">= 12"
+  }
+}

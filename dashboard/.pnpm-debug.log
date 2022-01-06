@@ -1,0 +1,14 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ERR_PNPM_NO_SCRIPT",
+    "err": {
+      "name": "pnpm",
+      "message": "Missing script: client",
+      "code": "ERR_PNPM_NO_SCRIPT",
+      "stack": "pnpm: Missing script: client\n    at Object.handler (/Users/ercumentlacin/.nvm/versions/node/v14.17.3/lib/node_modules/pnpm/dist/pnpm.cjs:130015:15)\n    at async /Users/ercumentlacin/.nvm/versions/node/v14.17.3/lib/node_modules/pnpm/dist/pnpm.cjs:134203:20\n    at async run (/Users/ercumentlacin/.nvm/versions/node/v14.17.3/lib/node_modules/pnpm/dist/pnpm.cjs:134177:34)\n    at async runPnpm (/Users/ercumentlacin/.nvm/versions/node/v14.17.3/lib/node_modules/pnpm/dist/pnpm.cjs:134389:5)\n    at async /Users/ercumentlacin/.nvm/versions/node/v14.17.3/lib/node_modules/pnpm/dist/pnpm.cjs:134381:7"
+    }
+  }
+}

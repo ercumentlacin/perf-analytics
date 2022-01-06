@@ -1,0 +1,13 @@
+{
+  "name": "perf-analytics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ercumentlacin <ercument.lacin@akinon.com>",
+  "license": "MIT",
+  "scripts": {
+    "client": "cd dashboard && npm run start",
+    "server": "cd api && npm run start",
+    "example": "cd perf-analytics && npm run start",
+    "start": "npm run example && npm run server && npm run client"
+  }
+}
